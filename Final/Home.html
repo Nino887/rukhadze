@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindMyBuddy</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header>
+        <div id="cookies-notification" class="hidden">
+            <p>This website uses cookies to ensure you get the best experience on our website. <a href="#">Learn more</a></p>
+            <button id="accept-cookies">Accept</button>
+          </div>
+        <div class="bgHome">
+            <img width="1440px" height="700px" src="./images/stars.jpg">
+        </div>
+        <nav>
+        <div class="satauri1">
+            <h4>FindBuddy</h4>
+        </div>
+        <div class="navLinks">
+         <a href="./Home.html">Home</a>
+         <a href="./AboutUs.html">About us</a>
+         <a href="./FindFriends.html">Find friends</a>
+         <a href="./SignUp.html">Sign up</a>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <div class=" animate__animated animate__bounce animate__backInUp 1s">
+        <div class="Homepic">
+            <img src="./images/Homepic.png" width="350px">
+            <h1 id="satauri1">We will help you find people that will become part of your journay!</h1>
+        </div >
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="hometxt">
+            <h3>Why are People Using this website?</h3>
+            <p>How do you meet new people when life is busy, when you need a change, or when you move to a new city? We offer a modern solution – a place online just to make friends.</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="icons1">
+            <img width="50px" src="./images/community.png">
+            <img width="50px" src="./images/authencity.png">
+            <img width="50px" src="./images/empathy.png">
+            <img width="50px" src="./images/loyalty.png">
+           
+        </div>
+        <div class="span">
+            <p><span id="Firstletter">T</span>here are certain hard truths about adulthood that we all must come to accept, like the fact that we have to do our taxes every year for the rest of our lives even though that kind of seems like it should be the government’s job and hangovers will continue to get less bearable with age. Also, that making friends as an adult is hard—sorry, it just is. But! It doesn’t have to be, especially in this, the age of friendship apps.</p>
+        </div>
+    </main>
+    <footer>
+        <div class="satauri2">
+            <p>FindBuddy</p>
+        </div>
+        <div class="footerinput">
+            <input placeholder="Did you like this blog?" type="text" >
+            <button>Save!</button>
+        </div>
+        <div class="socialmedia">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </footer>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        const cookiesNotification = document.getElementById('cookies-notification');
+        const acceptCookiesBtn = document.getElementById('accept-cookies');
+      
+        acceptCookiesBtn.addEventListener('click', function() {
+          cookiesNotification.style.display = 'none';
+          localStorage.setItem('cookiesAccepted', 'true');
+        });
+      
+        if (!localStorage.getItem('cookiesAccepted')) {
+          cookiesNotification.style.display = 'block';
+        }
+      });</script>
+</body>
+</html>
